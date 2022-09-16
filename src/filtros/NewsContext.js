@@ -9,7 +9,7 @@ export const NewsContextProvider = (props) => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:9000/persona/api/noticias"
+        "https://serene-fortress-57435.herokuapp.com/persona/api/noticias"
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
