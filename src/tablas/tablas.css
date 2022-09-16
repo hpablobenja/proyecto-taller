@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.table {
+  white-space: pre-wrap;
+  word-break: break-all;
+  table-layout:fixed
+}
+.c0{
+  width: 3em;
+} 
+.c1 {
+  width: 25em;
+}
+.c2{
+  width: 15em;
+}
