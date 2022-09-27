@@ -11,9 +11,9 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 
-const url="https://serene-fortress-57435.herokuapp.com/persona/api/all";
-const urlPost="https://serene-fortress-57435.herokuapp.com/persona/api/save";
-const urlDelete="https://serene-fortress-57435.herokuapp.com/persona/api/delete/";
+const url="http://localhost:9000/datos/api/personas";
+const urlPost="http://localhost:9000/datos/api/pguardar";
+const urlDelete="http://localhost:9000/datos/api/pborrar/";
 class Tabla extends Component {
 state={
   data:[],
@@ -147,7 +147,7 @@ console.log(this.state.form);
                     <label htmlFor="id">ID</label>
                     <input className="form-control" type="text" name="id" id="id" readOnly onChange={this.handleChange} value={form?form.id: this.state.data.length+1}/>
                     <br />
-                    <label htmlFor="usuario">Nombre</label>
+                    <label htmlFor="usuario">Usuario</label>
                     <input className="form-control" type="text" name="usuario" id="usuario" onChange={this.handleChange} value={form?form.usuario: ''}/>
                     <br />
                     <label htmlFor="password">Password</label>

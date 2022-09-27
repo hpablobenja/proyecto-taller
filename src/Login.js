@@ -6,7 +6,7 @@ import axios from 'axios';
 import Cookies from 'universal-cookie';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const baseUrl="https://serene-fortress-57435.herokuapp.com/persona/api/all";
+const baseUrl="http://localhost:9000/datos/api/personas";
 const cookies = new Cookies();
 
 class Login extends Component {
@@ -126,16 +126,18 @@ class Login extends Component {
 							<div className="col-4">
 								<a href="https://www.facebook.com/" className="btnn btn btn-block btn-social1 btn-facebook">
 								<FontAwesomeIcon icon="fa-brands fa-facebook" />
+								Facebook
 								</a>
 							</div>
 							<div className="col-4">
 								<a href="https://www.google.com/" className="btnn btn btn-block btn-social1 btn-google">
-									<i className="fa fa-twitter"></i>
+								Google
 								</a>
 							</div>
 							<div className="col-4">
 								<a href="https://www.twitter.com/" className="btnn btn btn-block btn-social1 btn-twitter">
-									<i className="fa fa-twitter"></i>
+									
+									Twitter
 								</a>
 							</div>
 						</div>

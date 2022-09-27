@@ -14,7 +14,7 @@ function Newss(props) {
   useEffect(() => {
     axios
       .get(
-        "https://serene-fortress-57435.herokuapp.com/persona/api/noticias"
+        "http://localhost:9000/datos/api/noticias"
       )
       .then((response) => setSportList(response.data))
       .catch((error) => console.log(error));

@@ -11,9 +11,9 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 
-const url="https://serene-fortress-57435.herokuapp.com/persona/api/noticias";
-const urlPost="https://serene-fortress-57435.herokuapp.com/persona/api/nsave";
-const urlDelete="https://serene-fortress-57435.herokuapp.com/persona/api/ndelete/";
+const url="http://localhost:9000/datos/api/noticias";
+const urlPost="http://localhost:9000/datos/api/nguardar";
+const urlDelete="http://localhost:9000/datos/api/nborrar/";
 class Tablan extends Component {
 state={
   data:[],
